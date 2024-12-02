@@ -2,15 +2,15 @@ package main
 
 import (
 	"fmt"
-	"io/ioutil"
 	"math"
+	"os"
 	"slices"
 	"strconv"
 	"strings"
 )
 
 func main() {
-	content, err := ioutil.ReadFile("input.txt") // the file is inside the local directory
+	content, err := os.ReadFile("input.txt") // the file is inside the local directory
 	if err != nil {
 		fmt.Println("Err")
 	}
